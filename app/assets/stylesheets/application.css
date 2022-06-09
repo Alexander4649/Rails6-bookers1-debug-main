@@ -1,15 +1,51 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+body {
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
+}
+
+.falsh-message {
+  color: green;
+}
+
+h1 {
+  display: block;
+  font-size: 2em;
+  font-weight: bold
+}
+
+strong {
+  font-weight: bold;
+}
+
+p {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
+}
+
+a{
+  
+}
+
+a:link { /*未訪問のリンク*/
+text-decoration:underline;
+/*background-color :#ccccff;/*未訪問時のリンク、背景色*/
+color:#000; /*黒色*/
+}
+a:visited { /*訪問済みのリンク*/
+text-decoration:underline;
+color:#666; /*グレー*/
+}
+a:active { /*ポイント時のリンク*/
+text-decoration:underline;
+color:#333333;
+}
+a:hover { /*マウスを乗せた時,選択中のリンク*/
+text-decoration:underline;
+background-color :#000;
+color:#fff; /*白*/
+}
